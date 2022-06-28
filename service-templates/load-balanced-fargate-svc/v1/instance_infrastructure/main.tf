@@ -241,3 +241,4 @@ resource "aws_appautoscaling_policy" "service_task_count_target_memory_scaling" 
     target_value = 50
   }
 }
+
