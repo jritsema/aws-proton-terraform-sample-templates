@@ -1,7 +1,7 @@
 resource "aws_cloudwatch_event_rule" "event_rule" {
   name                = "ecs_task_event_rule"
   schedule_expression = "rate(5 minutes)"
-  is_enabled          = true
+  is_enabled          = false
   role_arn            = aws_iam_role.schedule_task_def_event_role.arn
 }
 
